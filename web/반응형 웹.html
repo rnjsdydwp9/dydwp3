@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+    <style>
+    html{
+        margin-top:250px;
+        background-color: gray;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color:black;
+    }    
+    .texts {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color:black;
+    }
+    .texts ul{
+        margin-left: -40px;
+        font-size: 1.5rem;
+        visibility: hidden;
+        list-style-type: none;
+        }
+        
+    @media screen and (max-width: 80000px) and (min-width: 1600px){
+        .pc{
+        visibility: visible; } }
+    @media screen and (max-width: 1599px) and (min-width:1025px){
+        html{background-color: orange;}
+        .notebook{
+        visibility: visible; } }
+    @media screen and (max-width: 1024px) and (min-width:768px){
+    html{background-color: yellow;}
+    .ipad{
+    visibility: visible; } }
+    @media screen and (max-width: 767px){
+    html{background-color: green;}
+    .small{
+    visibility: visible; } }
+
+
+    </style>
+</head>
+<body>
+
+    <h2>여러 화면 크기로 구경해봐요!</h2>
+<div class="texts">
+    <ul>
+        <li class="pc">게이밍 pc</li>
+        <li class="notebook">가성비 PC</li>
+        <li class="ipad">노트북</li>
+        <li class="small">저 가 태플릿</li>
+    <ul>
+</div>
+</body>
+</html>
