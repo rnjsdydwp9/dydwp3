@@ -23,7 +23,7 @@
     justify-content: space-between;
 }
 .footer_appbtn button{
-    width: 9.375rem;
+    width: 48%;
     height: 2.75rem;
     padding: 0;
     border: none;
@@ -31,7 +31,7 @@
     font-size: 1rem;
     font-weight: 700;
 }
-.footer_nav{
+.footer_nav ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;

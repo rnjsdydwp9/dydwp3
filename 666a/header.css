@@ -1,4 +1,4 @@
-header.header{
+.header.header{
     position: fixed;
     top: 0;
     width: 100px;
@@ -6,7 +6,7 @@ header.header{
     background-color: #FFFFFF;
     color: #000000;
 }
-header.content{
+.header-content{
     width: 100%;
     max-width: 75rem;
     height: 4rem;
