@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문 성적표</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        const container = document.getElementById('container');
+        const prettyPat = prompt('중간고사 점수를 입력해주세요');
+        const p = document.createElement('p');
+        let grade = '';
+        if (prettyPat >= 90) {
+            grade = 'A';
+            p.textContent = `나의 기말고사 점수는 ${prettyPat}점, 학점은 ${grade} 입니다`;
+        } else if (prettyPat >= 80) {
+            grade = 'B';
+            p.textContent = `나의 기말고사 점수는 ${prettyPat}점, 학점은 ${grade} 입니다`;
+        } else if (prettyPat >= 70) {
+            grade = 'C';
+            p.textContent = `나의 기말고사 점수는 ${prettyPat}점, 학점은 ${grade} 입니다`;
+        } else if (prettyPat >= 60) {
+            grade = 'D';
+            p.textContent = `나의 기말고사 점수는 ${prettyPat}점, 학점은 ${grade} 입니다`;
+        } else {
+            grade = 'F';
+            p.textContent = `나의 기말고사 점수는 ${prettyPat}점, 학점은 ${grade} 입니다`;
+        }
+        container.append(p);
+        console.log(prettyPat);
+    </script>
+</body>
+    <h1>다음 조건에 맞게 코드를 작성하시오.</h1>
+    
+</html>
