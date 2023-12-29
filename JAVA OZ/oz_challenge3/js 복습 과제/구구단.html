@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구 구 단</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    table{
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th,td{
+      border: 1px solid gray;
+      padding: 5px;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>구구단 표</h1>
+  <table id="table">
+    <p>2단-9단을 만들어 보새요!</p>
+    <tr>
+      <th>2단</th>
+      <th>3단</th>
+      <th>4단</th>
+      <th>5단</th>
+      <th>6단</th>
+      <th>7단</th>
+      <th>8단</th>
+      <th>9단</th>
+    </tr>
+  </table>
+
+  <script>
+    function 구구단임(){
+      const table= document.getElementById(`table`);
+      for(let i = 2; i <=9; i++){
+        const row = document.createElement('td')
+
+        for(let j = 1; j<=9; j++){
+          const cell = document.createElement('tr');
+          cell.textContent = i + `*` + j + `=` + (i*j);
+          row.append(cell);
+        }
+
+        table.append(row);
+      }
+      
+    }
+    구구단임();
+  </script>
+</body>
+
+</html>
