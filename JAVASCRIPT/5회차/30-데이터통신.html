@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="push">Push</button>
+    <hr />
+    <img src="" alt="강쥬사진" />
+    <script>
+      const rqs = new XMLHttpRequest();
+      const button = document.getElementById("push");
+      button.addEventListener("click", () => {
+        rqs.open("get", "https://dog.ceo/api/breeds/image/random");
+        rqs.addEventListener("load", () => {
+          const result = JSON.parse(rqs.response);
+          const img = document.querySelector("img");
+          img.src = result.message;
+        });
+        rqs.send();
+      });
+    </script>
+  </body>
+</html>
