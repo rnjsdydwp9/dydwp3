@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="draw">추첨</button>
+  <p id="number"></p>
+
+  <script>
+    const button = document.getElementById("draw")
+    const p = document.getElementById("number")
+
+    // 제곱근을 구하는 메소드
+    // console.log(Math.sqrt(2))
+    // 절대값을 구하는 메소드
+    // console.log(Math.abs(2))
+    // 기타등등... 
+
+    //랜덤 숫자를 반환해준다 0~1사이의 랜덤 숫자를 반환해줌
+    let rn = Math.random()
+
+    // 주어진 숫자에서 소숫점 이하를 제거해 반환해준다
+    console.log(Math.floor(rn * 10) + 1)
+
+    button.addEventListener("click", () =>{
+      p.textContent = Math.floor(Math.random() * 10 + 1)
+    })
+  </script>
+</body>
+</html>

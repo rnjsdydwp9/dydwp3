@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cute{
+      width: 300px;
+      height: 300px;
+      border-radius: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="gosimperson 2023-06-21T215108.JPEG" alt="고심">
+  <br>
+  <button id="add">ADD STYLE</button>
+  <button id="remove">REMOVE STYLE</button>
+  <button id="toggle">TOGGLE STYLE</button>
+
+  <script>
+    const img = document.querySelector("img")
+    const addBtn = document.querySelector("#add")
+    const removeBtn = document.querySelector("#remove")
+    const toggleBtn = document.querySelector("#toggle")
+
+    console.log(img.classList)
+
+    addBtn.addEventListener("click",function(){
+      img.classList.add("cute")
+      console.log(img.classList.contains("cute"))
+    })
+    removeBtn.addEventListener("click",function(){
+      img.classList.remove("cute")
+      console.log(img.classList.contains("cute"))
+    })
+    toggleBtn.addEventListener("click",function(){
+      img.classList.toggle("cute")
+      console.log(img.classList.contains("cute"))
+    })
+  </script>
+</body>
+</html>

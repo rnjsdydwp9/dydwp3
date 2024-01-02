@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    const aespa = ["카리나","지젤","윈터","닝닝"]
+  
+    // aespa[0] = "지민"
+    // aespa[1] = "애리"
+    // aespa[2] = "민정"
+    // aespa[3] = "닝이줘"
+    // console.log(aespa)
+
+    // for(let i = 0; i<4; i+=1){
+    //   console.log(aespa[i])
+    // }
+
+    // push: 배열에 주어진 요소 추가하기
+    aespa.push("변경원")
+
+    // pop: 배열의 끝 부분부터 요소 제거하기
+    aespa.pop()
+
+    // indexOf : 주어진 요소의 유무를 인덱스 번호로 확인
+    aespa.indexOf("윈터")
+
+    //splice : 정해진 위치에서 부터 정해진 개수만큼 요소 제거
+    // aespa.splice(0,2)
+    // console.log(aespa)
+    //splice로 요소를 지운 다음, 대체 값을 채우는 것도 가능하다.
+    // aespa.splice(0,3,"지민","애리","민정","닝이줘")
+
+    //forEach : 배열의 개별 요소에 대한 함수를 차례대로 호출
+    aespa.forEach(function(item){
+      console.log("포이치에서 호출된 함수" + item)
+    })
+      
+    
+
+  </script>
+</body>
+</html>
