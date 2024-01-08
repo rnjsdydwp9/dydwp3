@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>랜덤숫자맞추기게임</title>
+</head>
+<body>
+ 
+    <div class="wrapper">
+        <div class="stage01">  
+            <button class="start_btn">시작하기</button>
+        <div>
+        <div class="stage02">  
+            <p class="gameStartText">내가생각하는 숫자를 맞춰 보세요(1부터 100까지)</p>
+            <p>
+                <input type="number" placeholder="예)15" name="num"/> 일꺼같아요!
+                    <button class="apply_btn">제출</button>
+                <span>기회가 <strong class="leftNum">10번</strong>남았어요!</span>
+            </p>
+            <ul class="log">  
+                <li>00를 입력했어요, 00보다 높아요!</li>
+                <li>00를 입력했어요, 00보다 낮아요!</li>
+            </ul>
+            
+            <p class="reStart"> 
+                <button class="btn_restart">다시할래요!</button>
+                <button class="btn_end">그만할래요!</button>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
